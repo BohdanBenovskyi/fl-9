@@ -1,0 +1,175 @@
+@media print {
+    @page{
+        margin-top: 100px;
+    }
+
+    body {
+        background: transparent;
+    }
+
+    .tm-sidebar, #about, section:not(:first-of-type) {
+        display: none;
+    }
+
+    .tm-main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .tm-banner {
+        height: 200px;
+        padding: unset;
+    }
+
+    .pad {
+        padding: 0 0 0 60px;
+    }
+
+    h2.tm-section-title {
+        color: blue;
+    }
+
+    .flex-2-col {
+        display: block;
+    }
+
+    .tm-team-description-container {
+        max-width: none;
+    }
+
+    .flex-item:last-child{
+        text-align: center;
+    }
+}
+
+@media screen{
+    .tm-box-bg-title:hover{
+        background-color: rgb(40, 216, 247);
+        color: white;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .thumbnail{
+        border-radius: 125px;
+    }
+
+    p:first-letter{
+        color: #76cdd7;
+        font-size: 30px;
+    }
+
+    .tm-sidebar{
+        box-shadow: 0 0 20px black;
+    }
+
+    .tm-content-box{
+        box-shadow: 0 0 20px black;
+    }
+
+    .tm-content-box {
+        position: relative;
+    }
+
+    section.blocks .flex-2-col {
+        display: none;
+        }
+
+    .tm-content-box:not(:empty)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 0.75cm solid rgb(40, 216, 247);
+        border-right: 3cm solid transparent;
+        z-index: 1;
+    }
+
+    .carousel-item .tm-section-title{
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    h2 + p:first-of-type{
+        font-style: italic;
+    }
+
+    p:not(.tm-banner){
+        line-height: 2em;
+        text-indent: 1em;
+    }
+
+    .text{
+        color: rgb(105, 105, 105);
+    }
+
+    .text::after{
+        content: "New";
+        color: red;
+        vertical-align: super;
+        font-size: 10px;
+    }
+
+    .pad ol a:visited{
+        color: silver;
+    }
+
+    .pad ol a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .pad ol a:hover{
+        color: rgb(40, 216, 247);
+        background-image: linear-gradient(to bottom, rgb(40, 216, 247) 33%, transparent 33%, transparent 66%, rgb(40, 216, 247) 66%, rgb(40, 216, 247));
+        background-position: 0 1.1em;
+        background-repeat: repeat-x;
+        background-size: 1px 4px;
+    }
+
+    .pad h2{
+        text-align: center;
+        color: rgb(40, 216, 247);
+    }
+
+    .pad .tm-section-title{
+        color: red;
+    }
+
+    .gallery-container .box:nth-child(odd){
+        background-color: lightgray;
+    }
+
+    .gallery-container .box p:first-letter{
+        color:black;
+    }
+
+    .tm-nav-item:not(:last-of-type){
+        border-bottom: silver 2px dotted;
+    }
+
+    .contact-form input{
+        color: red;
+    }
+
+    .contact-form button{
+        color: red;
+    }
+
+    .mandatory-field::after{
+        content: "*";
+        color: red;
+    }
+
+    .submit-btn:hover{
+        background-color: #76cdd7;
+        text-align: center;
+        color: white;
+    }
+
+    .tm-footer p::first-letter{
+        color: gray;
+    }
+}
