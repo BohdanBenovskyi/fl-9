@@ -1,0 +1,132 @@
+body {
+  font-family: serif;
+  background: lightgray; }
+
+.main-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background: lightgray; }
+
+header {
+  display: flex;
+  align-content: space-between;
+  align-items: flex-end; }
+  header .logo img {
+    width: 360px; }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 30px;
+    flex: 1 100%;
+    height: 50px;
+    border-top: 1px solid #9b9b9b;
+    border-bottom: 1px solid #9b9b9b;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  header a {
+    color: #f3550c; }
+    header a:hover {
+      color: #f9aa86; }
+    header a:visited {
+      color: #00ff80; }
+
+.toolbar {
+  text-align: right; }
+  .toolbar input {
+    border: 1px solid #f3550c;
+    height: 25px;
+    width: 200px;
+    background-color: transparent;
+    padding: 10px 15px;
+    margin: 15px 0; }
+  .toolbar ::placeholder {
+    color: #f3550c;
+    opacity: 1; }
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .post-list article {
+    flex: 0 48%;
+    margin-bottom: 20px;
+    padding: 7px;
+    background-color: white; }
+    .post-list article .post-description {
+      margin-top: 5px;
+      color: #b9d0d3;
+      border-bottom: 1px solid #9b9b9b;
+      margin-bottom: 5px; }
+    .post-list article img {
+      width: 100%; }
+    .post-list article div {
+      padding: 10px; }
+      .post-list article div h3 {
+        color: #8a9799;
+        text-transform: uppercase; }
+      .post-list article div p {
+        color: gray;
+        text-align: justify; }
+
+.about div h1 {
+  margin-top: 40px;
+  text-align: right;
+  color: #8a9799;
+  text-transform: uppercase; }
+.about div p {
+  color: gray;
+  line-height: 25px;
+  text-align: justify; }
+.about div img {
+  width: 100%; }
+
+.contact-form h1 {
+  margin-top: 40px;
+  text-align: right;
+  color: #8a9799;
+  text-transform: uppercase; }
+.contact-form h4 {
+  margin-top: 5px;
+  text-align: right;
+  color: #8a9799;
+  text-transform: uppercase; }
+
+form input {
+  height: 25px;
+  width: 100%;
+  margin-bottom: 10px; }
+form textarea {
+  height: 100%;
+  width: 100%;
+  overflow: auto; }
+form ::placeholder {
+  padding: 10px;
+  font-family: serif;
+  color: gray;
+  opacity: 1; }
+form .submit {
+  background-color: #f3550c;
+  border: 1px solid #f3550c;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  margin-bottom: 15px;
+  float: right;
+  margin-bottom: 25px; }
+  form .submit:hover {
+    background-color: #f9aa86;
+    border: 1px solid #f9aa86; }
+  form .submit:active {
+    background-color: #491a04;
+    border: 1px solid #491a04; }
+
+footer {
+  margin-top: 25px; }
+  footer span {
+    color: gray;
+    font-size: 10px; }
