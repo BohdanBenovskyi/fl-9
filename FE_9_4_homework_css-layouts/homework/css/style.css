@@ -4,14 +4,93 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Open Sans Regular";
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 header{
     padding: 0 22px;
     max-width: 1200px;
+    height: 720px;
     margin: 0 auto;
     background-image: url(../img/apples.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+}
+
+.main_nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.title_home{
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navigate{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.nav_header_item{
+    color: #fff;
+    text-decoration: none;
+}
+
+header .big_main_logo h1{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    top: 250px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
+header .big_main_logo h1 .ampersand{
+    font-size: 85px;
+}
+
+header .big_main_logo p{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    top: 360px;
+    font-size: 15px;
+}
+
+header .button_show_more{
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    width: 225px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    top: 535px;
+    border: 2px solid #fff;
 }
 
 main{
@@ -20,8 +99,140 @@ main{
     margin: 0 auto;   
 }
 
+.two_paragraph{
+    display: flex;
+    align-items: center;
+    height: 350px;
+}
+
+.first_par{
+    padding: 20px 20px 20px 0;
+    font-weight: normal;
+    width: 50%;
+    font-size: 25px;
+}
+
+.first_par .cl_bold{
+    font-weight: bold;
+}
+
+.second_par{
+    padding: 20px;
+    width: 50%;
+}
+
+.content{
+    background-color: #f3f3f3;
+    padding-top: 100px;
+}
+
+.content .fe_articles{
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 100px;
+}
+
+.content .fe_articles .fa_bold{
+    font-weight: bold;
+}
+
+.fe_article_item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.fe_article_item:nth-child(odd){
+    flex-direction: row-reverse;
+    padding-right: 30px;
+}
+
+.fe_article_item .img_fe_article{
+    padding-left: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.fe_article_item .fe_header{
+    font-size: 15px;
+    padding: 20px;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    top: 240px;
+    color: #fff;
+}
+
+.fe_article_item .p_fe_article{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.fe_article_item .fe_like{
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.fe_article_item .fe_like::after{
+    content: " ♥";
+}
+
+.subscribe .sbsFormHeader{
+    font-weight: normal;
+    padding-right: 20px;
+}
+
+.subscribe .sbsForm, footer .footer_newslatter .subscribe_form{
+    display: flex;
+    flex-grow: 1;
+}
+
+.sbsEmail{
+    padding: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #343638;
+    flex-grow: 1;
+}
+
+.sbsBtn{
+    padding: 21px 20px;
+    color: #fff;
+    background-color: #343638;
+    border: none;
+    cursor: pointer;
+}
+
 footer{
     padding: 0 22px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.footer_up{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.footer_blw .footer_last_tweet .footer_contact .footer_newslatter{
+    width: 10%;
+}
+
+.fHeader{
+    font-weight: normal;
+}
+
+.fContent{
+    color: #A4A4A4;
+    font-size: 10px;
 }

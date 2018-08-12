@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-      <a href="#home" class="title_home">BLACK &amp; WHITE</a>
-      <section class="navigate">
-        <nav>
+      <section class="main_nav">
+        <a href="#home" class="title_home">BLACK &amp; WHITE</a>
+        <nav class="navigate">
             <a href="#home" class="nav_header_item">Home</a>
             <a href="#about" class="nav_header_item">About</a>
             <a href="#vacancies" class="nav_header_item">Vacancies</a>
@@ -25,51 +25,105 @@
         <p>An Original Brand Since 1965</p>
       </section>
 
-      <section class="button_show_more">
-        <input type="button" value="Show More">
+      <section>
+          <a href="#more" class="button_show_more">Show More</a>
       </section>
     </header>
 
     <main>
       <section class="two_paragraph">
-        <p>Lorem ipsum dolor, consectetur adipiscing. Aenean commodo ligula eget dolor.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donee quam felis, ultricies nec. pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        <p class="first_par">Lorem ipsum dolor, consectetur adipiscing. Aenean <span class="cl_bold">commodo ligula</span> eget dolor.</p>
+        <p class="second_par">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donee quam felis, ultricies nec. pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
       </section>
 
       <section class="content">
+        <h2 class="fe_articles">Read some of our <span class="fa_bold">featured articles</span></h2>
+        <article class="fe_article_item">
+          <section class="img_fe_article">
+            <img src="img/sample.jpg" alt="sample.jpg">
+            <h3 class="fe_header">Januari'15 <strong>South Franse</strong></h3>
+            <button class="fe_like" title="Like!">172</button>
+          </section>
+          <section class="p_fe_article">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donee quam felis, ultricies nec. pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          </section>
+        </article>
+
+        <article class="fe_article_item">
+          <section class="img_fe_article">
+            <img src="img/sample3.jpg" alt="sample.jpg">
+            <h3 class="fe_header">Januari'15 <strong>South America</strong></h3>
+            <button class="fe_like" title="Like!">172</button>
+          </section>
+          <section class="p_fe_article">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donee quam felis, ultricies nec. pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          </section>
+        </article>
+
+        <article class="fe_article_item">
+          <section class="img_fe_article">
+            <img src="img/sample.jpg" alt="sample.jpg">
+            <h3 class="fe_header">Januari'15 <strong>South Franse</strong></h3>
+            <button class="fe_like" title="Like!">20</button>
+          </section>
+          <section class="p_fe_article">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donee quam felis, ultricies nec. pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          </section>
+        </article>
+
+        <article class="fe_article_item">
+          <section class="img_fe_article">
+            <img src="img/sample3.jpg" alt="sample.jpg">
+            <h3 class="fe_header">Januari'15 <strong>South America</strong></h3>
+            <button class="fe_like" title="Like!">150</button>
+          </section>
+          <section class="p_fe_article">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donee quam felis, ultricies nec. pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          </section>
+        </article>
+
       </section>
 
       <section class="subscribe">
-
+          <h2 class="sbsFormHeader">Subscribe to our <strong>newspletter</strong></h2>
+          <form class="sbsForm">
+            <input type="email" class="sbsEmail" placeholder="Enter your e-mail address">
+            <input type="submit" class="sbsBtn" value="Subscribe">
+        </form>
       </section>
     </main>
 
     <footer>
+      <section class="footer_up">
       <section class="footer_blw">
-        <h3>Black &amp; White</h3>
-        <p>consequuntur magni dolores ratione votuptatem sequi nescue porro quisquam est. qui d sum quia dolor sit amet, cons sum quia sum quia</p>
+        <h3 class="fHeader">Black &amp; White</h3>
+        <p class="fContent">consequuntur magni dolores ratione votuptatem sequi nescue porro quisquam est. qui d sum quia dolor sit amet, cons sum quia sum quia</p>
       </section>
 
       <section class="footer_last_tweet">
-        <h3>Last Tweet</h3>
-        <p>... aerat viuptatem. Ut eni et illi dolore magnam aliqua et aerat voluptatem. Utils eni tils et al is minima veniam</p>
+        <h3 class="fHeader">Last Tweet</h3>
+        <p class="fContent">... aerat viuptatem. Ut eni et illi dolore magnam aliqua et aerat voluptatem. Utils eni tils et al is minima veniam</p>
       </section>
 
       <section class="footer_contact">
-        <h3>Contact</h3>
-        <p>www.loremipsumdolar.nl</p>
-        <p>182 AB Your Street Name</p>
-        <p>e-mail@loremipsum.com</p>
-        <p>+(121)01 23 45 679</p>
+        <h3 class="fHeader">Contact</h3>
+        <p class="fContent">www.loremipsumdolar.nl</p>
+        <p class="fContent">182 AB Your Street Name</p>
+        <p class="fContent">e-mail@loremipsum.com</p>
+        <p class="fContent">+(121)01 23 45 679</p>
       </section>
 
       <section class="footer_newslatter">
-        <h3>Newslatter</h3>
-        <p>Neque porro quisquam eist. im ipsum quia dolor sit amettur, adipisci velit,</p>
+        <h3 class="fHeader">Newslatter</h3>
+        <p class="fContent">Neque porro quisquam eist. im ipsum quia dolor sit amettur, adipisci velit,</p>
         <form class="subscribe_form">
-          <input type="email" placeholder="Enter your e-mail address">
-          <input type="submit" value="Subscribe">
+          <input type="email" class="sbsEmail" placeholder="Enter your e-mail address">
+          <input type="submit" class="sbsBtn" value="Subscribe">
         </form>
+      </section>
+      </section>
+
+      <section class="footer_down">
 
         <hr class="footer_line">
 
