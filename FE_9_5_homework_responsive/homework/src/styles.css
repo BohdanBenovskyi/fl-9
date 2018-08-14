@@ -1,25 +1,124 @@
-/*
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- */
-:root {
-  --bg-color--dark: #0a1223;
-  --bg-color--light: #fff;
-  --link: #5d5d5d;
-  --link--active: #54597d;
-  --link--hover: #54597d;
-  --article-title: #ddd;
-  --article-title--dark: #000;
-  --thumbnail--description: #5d5d5d;
-
-  /* These styles are needed only for media query max-width: 575px */
-
-  /* The 'Up' button (circle button at right bottom corner) */
-  --btn-color: #fff;
-  --btn-bg-color: #5ebcff;
-
-  --navigation-border-bottom: #ddd;
-  --thumbnail-title: #484747;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Your styles go here */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a1223;
+}
+
+.header_nav{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+
+header nav a.nav_item{
+  color: #5d5d5d;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+header nav a.nav_item:hover{
+  color: #54597d;
+  text-decoration: none;
+}
+
+header nav a.nav_item_moon{
+  color: #54597d;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+header nav a.nav_item_moon:hover{
+  color: #54597d;
+  text-decoration: none;
+}
+
+main .big_title h1{
+  color: #ddd;
+  text-align: center;
+  padding-top: 180px;
+  font-size: 65px;
+  padding-bottom: 100px;
+}
+
+.info .text .text_header{
+  background: linear-gradient(to right, #ddd, #5d5d5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 25%;
+}
+
+.info .text .text_paragraph{
+  color: #5d5d5d;
+  padding-left: 25%;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+img{
+  height: auto;
+  width: 60%;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.info:nth-child(odd){
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 991px) {
+  .navigate {
+    justify-content: center;
+  }
+
+  .info, .info:nth-child(odd) {
+    flex-direction: column-reverse;    
+  }
+
+  img, .info .text .text_paragraph {
+    width: 100%;
+  }
+
+  img {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    background-color: #fff;
+  }
+
+  .navigate {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .nav-item, .nav_item_moon {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }  
+
+  .info .text .text_header{
+    font-size: 25px;
+    color: #484747;  
+  }
+
+  .info .text .text_paragraph {
+    font-size: 35px;
+    color: #484747;
+  }  
+}
